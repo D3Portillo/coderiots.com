@@ -42,7 +42,7 @@ export default function Home() {
               </a>
             </div>
             <button className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              Join Now
+              Live Events
             </button>
           </div>
         </div>
@@ -137,10 +137,11 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-                The <span className="text-riot-yellow">Crypto</span> Competition
-                Layer
+                The <span className="text-riot-yellow">Crypto</span>
+                <br />
+                Competition Layer
               </h2>
-              <p className="text-xl text-white/80 mb-8 leading-relaxed">
+              <p className="text-xl text-white mb-8 leading-relaxed">
                 This isn't just learning—it's entertainment. Audiences invest in
                 participants they believe in, sharing in their success and
                 creating a thrilling spectator experience.
@@ -151,8 +152,8 @@ export default function Home() {
                   <div className="w-8 h-8 bg-riot-yellow rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-black text-sm font-bold">✓</span>
                   </div>
-                  <div className="mt-1">
-                    <h3 className="text-lg font-bold text-riot-yellow mb-2">
+                  <div>
+                    <h3 className="text-lg font-bold text-riot-yellow my-0.5">
                       Live Audience Backing
                     </h3>
                     <p className="text-white/70">
@@ -166,8 +167,8 @@ export default function Home() {
                   <div className="w-8 h-8 bg-riot-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-black text-sm font-bold">✓</span>
                   </div>
-                  <div className="mt-1">
-                    <h3 className="text-lg font-bold text-riot-blue mb-2">
+                  <div>
+                    <h3 className="text-lg font-bold text-riot-blue my-0.5">
                       Shared Success
                     </h3>
                     <p className="text-white/70">
@@ -181,8 +182,8 @@ export default function Home() {
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-black text-sm font-bold">✓</span>
                   </div>
-                  <div className="mt-1">
-                    <h3 className="text-lg font-bold text-white mb-2">
+                  <div>
+                    <h3 className="text-lg font-bold text-white my-0.5">
                       High-Stakes Drama
                     </h3>
                     <p className="text-white/70">
@@ -196,7 +197,7 @@ export default function Home() {
 
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                Live Event Stats
+                Past Event Stats
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
@@ -338,7 +339,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-blue p-1 rounded-2xl max-w-md mx-auto">
+            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-blue p-1 rounded-2xl max-w-md mx-auto animate-gradient bg-[length:200%_100%]">
+              <style>{`
+                @keyframes gradient {
+                  0% { background-position: 0% 50%; }
+                  50% { background-position: 100% 50%; }
+                  100% { background-position: 0% 50%; }
+                }
+                .animate-gradient {
+                  animation: gradient 3s ease-in-out infinite;
+                }
+              `}</style>
               <div className="bg-black p-10 rounded-xl text-center">
                 <h3 className="text-3xl font-bold text-white mb-4">
                   Ready to change a someone's life?
