@@ -87,7 +87,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
-              <div className="w-16 h-16 bg-riot-red rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 border-2 border-black bg-gradient-to-bl from-riot-red to-black rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-black text-white">1</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">
@@ -101,8 +101,8 @@ export default function Home() {
             </div>
 
             <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
-              <div className="w-16 h-16 bg-riot-yellow rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-black text-black">2</span>
+              <div className="w-16 h-16 border-2 border-black bg-gradient-to-bl from-riot-yellow to-black rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-black text-white">2</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">
                 Learn & Compete
@@ -115,8 +115,8 @@ export default function Home() {
             </div>
 
             <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-black text-black">3</span>
+              <div className="w-16 h-16 border-2 border-black bg-gradient-to-bl from-riot-green to-black rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-black text-white">3</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">
                 Earn & Grow
@@ -380,7 +380,7 @@ export default function Home() {
                 <p className="text-white/80 mb-6">
                   Hackathon bids open in 20 hours.
                 </p>
-                <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors w-full">
+                <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors w-full">
                   Bid on the winning team
                 </button>
               </div>
