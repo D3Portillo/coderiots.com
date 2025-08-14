@@ -134,7 +134,7 @@ export default function Home() {
       {/* Competition Layer */}
       <section id="competition" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
                 The <span className="text-riot-yellow">Crypto</span>
@@ -164,11 +164,11 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-riot-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-riot-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-black text-sm font-bold">✓</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-riot-blue my-0.5">
+                    <h3 className="text-lg font-bold text-riot-green my-0.5">
                       Shared Success
                     </h3>
                     <p className="text-white/70">
@@ -195,14 +195,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
+            <div className="bg-gradient-to-br from-white/10 to-white/5 p-9 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-bold text-white mb-8 text-center">
                 Past Event Stats
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Active Participants</span>
-                  <span className="text-white font-bold text-xl">247</span>
+                  <span className="text-white font-medium text-xl">247</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Total Backing Pool</span>
@@ -212,11 +212,13 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Avg. Live Viewers</span>
-                  <span className="text-white font-bold text-xl">1,832</span>
+                  <span className="text-white font-medium text-xl">1,832</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Next Event</span>
-                  <span className="text-white font-bold text-xl">20 hours</span>
+                  <span className="text-white font-medium text-xl">
+                    20 hours
+                  </span>
                 </div>
               </div>
             </div>
@@ -225,7 +227,10 @@ export default function Home() {
       </section>
 
       {/* Success Stories */}
-      <section id="success" className="py-32 bg-gray-900">
+      <section
+        id="success"
+        className="py-32 bg-gradient-to-b from-gray-900 via-gray-900 to-black"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
@@ -237,69 +242,87 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-riot-red rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white font-bold text-xl">MB</span>
-                </div>
+            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
+              <div className="mb-8">
+                <div
+                  style={{
+                    backgroundImage:
+                      "url(https://randomuser.me/api/portraits/women/1.jpg)",
+                  }}
+                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
+                />
                 <h3 className="text-2xl font-bold text-white">
                   Maria Benavides
                 </h3>
-                <p className="text-riot-yellow">
+                <p className="text-white/70">
                   Frontend Developer at StratoFinance
                 </p>
               </div>
-              <p className="text-white/80 mb-4 italic">
+              <p className="text-white mb-4 italic">
                 "I started with zero coding experience. After 6 months of
                 hackathons, I landed my dream job and improved my English from
                 zero to meeting my fiancé."
               </p>
-              <div className="text-riot-blue font-bold">
-                $65k → $95k salary increase
+              <div className="text-riot-yellow text-sm font-bold">
+                ⭐ $12k → $85k salary increase
               </div>
             </div>
 
-            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-riot-yellow rounded-full flex items-center justify-center mb-4">
-                  <span className="text-black font-bold text-xl">AR</span>
-                </div>
+            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
+              <div className="mb-8">
+                <div
+                  style={{
+                    backgroundImage:
+                      "url(https://randomuser.me/api/portraits/men/20.jpg)",
+                  }}
+                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
+                />
                 <h3 className="text-2xl font-bold text-white">
                   Antonio Rodriguez
                 </h3>
-                <p className="text-riot-yellow">Full-Stack Developer, Remote</p>
+                <p className="text-white/70">Full-Stack Developer, Remote</p>
               </div>
-              <p className="text-white/80 mb-4 italic">
+              <p className="text-white mb-4 italic">
                 "The competitive environment pushed me harder than any
                 traditional course. Now I work for a US company remotely from
                 Honduras."
               </p>
-              <div className="text-riot-blue font-bold">
-                Life-changing opportunity
+              <div className="text-riot-yellow text-sm font-bold">
+                ⭐ Life-changing opportunity
               </div>
             </div>
 
-            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-riot-blue rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white font-bold text-xl">LS</span>
-                </div>
+            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
+              <div className="mb-8">
+                <div
+                  style={{
+                    backgroundImage:
+                      "url(https://randomuser.me/api/portraits/women/4.jpg)",
+                  }}
+                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
+                />
                 <h3 className="text-2xl font-bold text-white">Liza Santos</h3>
-                <p className="text-riot-yellow">Startup Founder</p>
+                <p className="text-white/70">Startup Founder</p>
               </div>
-              <p className="text-white/80 mb-4 italic">
+
+              <p className="text-white mb-4 italic">
                 "I met my co-founder during a CodeRiots hackathon. The network
                 and skills I gained here helped us raise $2M for our AI{"<>"}
                 Crypto startup."
               </p>
-              <div className="text-riot-blue font-bold">$2M funding raised</div>
+              <div className="text-riot-yellow text-sm font-bold">
+                ⭐ $2M funding raised
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Community & Social Proof */}
-      <section id="community" className="pt-40 pb-20 bg-black">
+      <section
+        id="community"
+        className="pt-40 border-t border-white/10 pb-20 bg-black"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
@@ -320,13 +343,13 @@ export default function Home() {
                 <div className="text-white/70">Active Participants</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-riot-yellow mb-2">
+                <div className="text-3xl md:text-5xl font-black text-riot-green mb-2">
                   $2.3M
                 </div>
                 <div className="text-white/70">Total Earnings Paid</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-riot-blue mb-2">
+                <div className="text-3xl md:text-5xl font-black text-riot-yellow mb-2">
                   847
                 </div>
                 <div className="text-white/70">Jobs Enrolled</div>
@@ -339,7 +362,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-blue p-1 rounded-2xl max-w-md mx-auto animate-gradient bg-[length:200%_100%]">
+            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-green p-1 rounded-2xl max-w-md mx-auto animate-gradient bg-[length:200%_100%]">
               <style>{`
                 @keyframes gradient {
                   0% { background-position: 0% 50%; }
@@ -358,7 +381,7 @@ export default function Home() {
                   Hackathon bids open in 20 hours.
                 </p>
                 <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors w-full">
-                  Bid for the winner team
+                  Bid on the winning team
                 </button>
               </div>
             </div>

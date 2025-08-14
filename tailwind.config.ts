@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'riot-red': '#E10600',
-        'riot-yellow': '#FFD700',
-        'riot-blue': '#1E90FF',
+        "riot-red": "#E10600",
+        "riot-yellow": "#FFD700",
+        "riot-green": "#00FF00",
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
