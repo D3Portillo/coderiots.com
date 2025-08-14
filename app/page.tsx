@@ -1,0 +1,475 @@
+import Image from "next/image"
+
+import asset_logo_full from "@/assets/logo-full.png"
+import asset_logo from "@/assets/logo.png"
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex mr-3 shrink-0 invert items-center">
+              <figure>
+                <Image src={asset_logo_full} alt="" className="w-32" />
+              </figure>
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <a
+                href="#how-it-works"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                How It Works
+              </a>
+              <a
+                href="#competition"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                Competition
+              </a>
+              <a
+                href="#success"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                Success Stories
+              </a>
+              <a
+                href="#community"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                Community
+              </a>
+            </div>
+            <button className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              Join Now
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-16 pb-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center pt-40 pb-16">
+            <h1 className="text-5xl max-w-2xl mx-auto md:text-7xl font-black mb-6">
+              CHANGE YOUR LIFE TROUG CODE
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
+              Join high-stakes hackathons where you learn English and coding
+              while audiences back you with crypto. Make skill-building as
+              thrilling to watch as it is life-changing to experience.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors">
+                Start Your Journey
+              </button>
+              <button className="border-2 border-riot-red text-riot-red hover:bg-riot-red hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all">
+                Watch Live Events
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="pt-20 pb-40 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              How It Works
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Three simple steps to transform your life through competitive
+              learning
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
+              <div className="w-16 h-16 bg-riot-red rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-black text-white">1</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Join a Hackathon
+              </h3>
+              <p className="text-white/70 leading-relaxed">
+                Register for short, high-energy hackathons designed for all
+                skill levels. Each event focuses on practical coding challenges
+                and English communication.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
+              <div className="w-16 h-16 bg-riot-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-black text-black">2</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Learn & Compete
+              </h3>
+              <p className="text-white/70 leading-relaxed">
+                Build real projects while improving your English and coding
+                skills. Audiences watch your progress and can back promising
+                participants.
+              </p>
+            </div>
+
+            <div className="text-center p-8 bg-black/50 rounded-2xl border border-white/10">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-black text-black">3</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Earn & Grow
+              </h3>
+              <p className="text-white/70 leading-relaxed">
+                Win prize money, get funded by supporters, and unlock career
+                opportunities. Top performers join our exclusive developer
+                network.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Competition Layer */}
+      <section id="competition" className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+                The <span className="text-riot-yellow">Crypto</span> Competition
+                Layer
+              </h2>
+              <p className="text-xl text-white/80 mb-8 leading-relaxed">
+                This isn't just learning—it's entertainment. Audiences invest in
+                participants they believe in, sharing in their success and
+                creating a thrilling spectator experience.
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-riot-yellow rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-sm font-bold">✓</span>
+                  </div>
+                  <div className="mt-1">
+                    <h3 className="text-lg font-bold text-riot-yellow mb-2">
+                      Live Audience Backing
+                    </h3>
+                    <p className="text-white/70">
+                      Spectators can invest crypto in participants during live
+                      events, boosting their potential rewards.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-riot-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-sm font-bold">✓</span>
+                  </div>
+                  <div className="mt-1">
+                    <h3 className="text-lg font-bold text-riot-blue mb-2">
+                      Shared Success
+                    </h3>
+                    <p className="text-white/70">
+                      When you win, your backers win too. It's a community
+                      investment in human potential.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-sm font-bold">✓</span>
+                  </div>
+                  <div className="mt-1">
+                    <h3 className="text-lg font-bold text-white mb-2">
+                      High-Stakes Drama
+                    </h3>
+                    <p className="text-white/70">
+                      Real money, real skills, real lives changing. Every
+                      hackathon is an event worth watching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">
+                Live Event Stats
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
+                  <span className="text-white/80">Active Participants</span>
+                  <span className="text-white font-bold text-xl">247</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
+                  <span className="text-white/80">Total Backing Pool</span>
+                  <span className="text-riot-yellow underline font-bold text-xl">
+                    $12,450
+                  </span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
+                  <span className="text-white/80">Avg. Live Viewers</span>
+                  <span className="text-white font-bold text-xl">1,832</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
+                  <span className="text-white/80">Next Event</span>
+                  <span className="text-white font-bold text-xl">20 hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories */}
+      <section id="success" className="py-32 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              Success Stories
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Real people. Real transformations. Real opportunities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-riot-red rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">MB</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white">
+                  Maria Benavides
+                </h3>
+                <p className="text-riot-yellow">
+                  Frontend Developer at StratoFinance
+                </p>
+              </div>
+              <p className="text-white/80 mb-4 italic">
+                "I started with zero coding experience. After 6 months of
+                hackathons, I landed my dream job and improved my English from
+                zero to meeting my fiancé."
+              </p>
+              <div className="text-riot-blue font-bold">
+                $65k → $95k salary increase
+              </div>
+            </div>
+
+            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-riot-yellow rounded-full flex items-center justify-center mb-4">
+                  <span className="text-black font-bold text-xl">AR</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white">
+                  Antonio Rodriguez
+                </h3>
+                <p className="text-riot-yellow">Full-Stack Developer, Remote</p>
+              </div>
+              <p className="text-white/80 mb-4 italic">
+                "The competitive environment pushed me harder than any
+                traditional course. Now I work for a US company remotely from
+                Honduras."
+              </p>
+              <div className="text-riot-blue font-bold">
+                Life-changing opportunity
+              </div>
+            </div>
+
+            <div className="bg-black/50 p-8 rounded-2xl border border-white/10">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-riot-blue rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">LS</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white">Liza Santos</h3>
+                <p className="text-riot-yellow">Startup Founder</p>
+              </div>
+              <p className="text-white/80 mb-4 italic">
+                "I met my co-founder during a CodeRiots hackathon. The network
+                and skills I gained here helped us raise $2M for our AI{"<>"}
+                Crypto startup."
+              </p>
+              <div className="text-riot-blue font-bold">$2M funding raised</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community & Social Proof */}
+      <section id="community" className="pt-40 pb-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              Join the{" "}
+              <span className="text-riot-red line-through">Revolution</span>
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
+              Thousands of developers are already transforming their lives.
+              <br />
+              Your journey starts now.
+            </p>
+
+            <div className="grid md:grid-cols-4 gap-8 mb-32">
+              <div className="text-center">
+                <div className="text-3xl md:text-5xl font-black text-riot-red mb-2">
+                  1.7K+
+                </div>
+                <div className="text-white/70">Active Participants</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-5xl font-black text-riot-yellow mb-2">
+                  $2.3M
+                </div>
+                <div className="text-white/70">Total Earnings Paid</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-5xl font-black text-riot-blue mb-2">
+                  847
+                </div>
+                <div className="text-white/70">Jobs Enrolled</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-5xl font-black text-white mb-2">
+                  100%
+                </div>
+                <div className="text-white/70">Lifes Changed</div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-blue p-1 rounded-2xl max-w-md mx-auto">
+              <div className="bg-black p-10 rounded-xl text-center">
+                <h3 className="text-3xl font-bold text-white mb-4">
+                  Ready to change a someone's life?
+                </h3>
+                <p className="text-white/80 mb-6">
+                  Hackathon bids open in 20 hours.
+                </p>
+                <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors w-full">
+                  Bid for the winner team
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 bg-gray-900 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="col-span-2">
+              <div className="flex items-center mb-4">
+                <figure className="mr-3 invert w-12">
+                  <Image src={asset_logo} alt="" />
+                </figure>
+              </div>
+              <p className="text-white/70 mb-4 max-w-md">
+                <strong className="font-semibold">CodeWarriors:</strong>{" "}
+                Changing lives through high-stakes hackathons funded by crypto
+                competition. Join the revolution of skill-building
+                entertainment.
+              </p>
+              <div className="flex [&_a]:underline [&_a]:underline-offset-4 space-x-4">
+                <a
+                  href="https://twitter.com/0xCodeRiots"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-riot-yellow transition-colors"
+                >
+                  Twitter/X
+                </a>
+                <a
+                  href="#"
+                  className="text-white/70 hover:text-riot-yellow transition-colors"
+                >
+                  Discord
+                </a>
+                <a
+                  href="#"
+                  className="text-white/70 hover:text-riot-yellow transition-colors"
+                >
+                  Telegram
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-white font-bold mb-4">Platform</h3>
+              <div className="space-y-2">
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  How It Works
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Live Events
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Leaderboard
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Prizes
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-white font-bold mb-4">Community</h3>
+              <div className="space-y-2">
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Success Stories
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Developer Network
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  Support
+                </a>
+                <a
+                  href="#"
+                  className="block text-white/70 hover:text-white transition-colors"
+                >
+                  FAQ
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 mt-8 pt-8 text-center">
+            <p className="text-white/70">
+              © 2025 Code Riots. All rights reserved. |
+              <a href="#" className="hover:text-white transition-colors ml-1">
+                Privacy Policy
+              </a>{" "}
+              |
+              <a href="#" className="hover:text-white transition-colors ml-1">
+                Terms of Service
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  )
+}
