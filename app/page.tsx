@@ -2,6 +2,7 @@ import Image from "next/image"
 
 import asset_logo_full from "@/assets/logo-full.png"
 import asset_logo from "@/assets/logo.png"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -41,9 +42,13 @@ export default function Home() {
                 Community
               </a>
             </div>
-            <button className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+            <Link
+              href="https://app.coderiots.com"
+              target="_blank"
+              className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+            >
               Live Events
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -64,9 +69,13 @@ export default function Home() {
               <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors">
                 Start Your Journey
               </button>
-              <button className="border-2 border-riot-red text-riot-red hover:bg-riot-red hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all">
+              <Link
+                href="https://app.coderiots.com"
+                target="_blank"
+                className="border-2 border-riot-red text-riot-red hover:bg-riot-red hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all"
+              >
                 Watch Live Events
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -390,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 border-t border-white/10">
+      <footer className="py-12 [&_a]:outline-none bg-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="col-span-2">
@@ -439,7 +448,8 @@ export default function Home() {
                   How It Works
                 </a>
                 <a
-                  href="#"
+                  href="https://app.coderiots.com"
+                  target="_blank"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   Live Events
