@@ -12,9 +12,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex mr-3 shrink-0 invert items-center">
-              <figure>
-                <Image src={asset_logo_full} alt="" className="w-32" />
-              </figure>
+              <Link href="/#">
+                <figure>
+                  <Image src={asset_logo_full} alt="" className="w-32" />
+                </figure>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-8">
               <a
@@ -43,11 +45,11 @@ export default function Home() {
               </a>
             </div>
             <Link
-              href="https://app.coderiots.com"
+              href="https://tally.so/r/3E2QlA"
               target="_blank"
               className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
             >
-              Live Events
+              Request demo
             </Link>
           </div>
         </div>
@@ -61,20 +63,24 @@ export default function Home() {
               CHANGE YOUR LIFE THROUGH CODE
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Join high-stakes hackathons where you learn English and coding
-              while audiences back you with crypto. Make skill-building as
-              thrilling to watch as it is life-changing to experience.
+              Join high-stake hackathons where you learn to code while audiences
+              back you with crypto. Make skill-building as thrilling to watch as
+              a life-changing experience.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors">
-                Start Your Journey
-              </button>
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Link
-                href="https://app.coderiots.com"
+                href="https://tally.so/r/3E2QlA"
                 target="_blank"
-                className="border-2 border-riot-red text-riot-red hover:bg-riot-red hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all"
+                className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors"
               >
-                Watch Live Events
+                Request Demo
+              </Link>
+              <Link
+                href="https://t.me/d3portillo"
+                target="_blank"
+                className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all"
+              >
+                Contact Sales
               </Link>
             </div>
           </div>
@@ -383,15 +389,19 @@ export default function Home() {
                 }
               `}</style>
               <div className="bg-black p-10 rounded-xl text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">
-                  Ready to change a someone's life?
+                <h3 className="text-3xl font-bold text-white mb-1">
+                  Ready to back a winner?
                 </h3>
-                <p className="text-white/80 mb-6">
-                  Hackathon bids open in 20 hours.
+                <p className="text-white/80 text-lg mb-8">
+                  Hackathon bids are coming soon.
                 </p>
-                <button className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors w-full">
-                  Bid on the winning team
-                </button>
+                <Link
+                  href="https://tally.so/r/3E2QlA"
+                  target="_blank"
+                  className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors w-full"
+                >
+                  Request Demo
+                </Link>
               </div>
             </div>
           </div>
@@ -423,14 +433,9 @@ export default function Home() {
                 >
                   Twitter/X
                 </a>
+
                 <a
-                  href="#"
-                  className="text-white/70 hover:text-riot-yellow transition-colors"
-                >
-                  Discord
-                </a>
-                <a
-                  href="#"
+                  href="https://t.me/+zsYD4JmLa8U5ZDRh"
                   className="text-white/70 hover:text-riot-yellow transition-colors"
                 >
                   Telegram
@@ -448,18 +453,13 @@ export default function Home() {
                   How It Works
                 </a>
                 <a
-                  href="https://app.coderiots.com"
+                  href="https://tally.so/r/3E2QlA"
                   target="_blank"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
-                  Live Events
+                  Request Demo
                 </a>
-                <a
-                  href="#"
-                  className="block text-white/70 hover:text-white transition-colors"
-                >
-                  Leaderboard
-                </a>
+
                 <a
                   href="#"
                   className="block text-white/70 hover:text-white transition-colors"
@@ -473,28 +473,22 @@ export default function Home() {
               <h3 className="text-white font-bold mb-4">Community</h3>
               <div className="space-y-2">
                 <a
-                  href="#"
+                  href="#success"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   Success Stories
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/+zsYD4JmLa8U5ZDRh"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   Developer Network
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/d3portillo"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   Support
-                </a>
-                <a
-                  href="#"
-                  className="block text-white/70 hover:text-white transition-colors"
-                >
-                  FAQ
                 </a>
               </div>
             </div>
@@ -502,14 +496,7 @@ export default function Home() {
 
           <div className="border-t border-white/10 mt-8 pt-8 text-center">
             <p className="text-white/70">
-              © 2025 Code Riots. All rights reserved. |
-              <a href="#" className="hover:text-white transition-colors ml-1">
-                Privacy Policy
-              </a>{" "}
-              |
-              <a href="#" className="hover:text-white transition-colors ml-1">
-                Terms of Service
-              </a>
+              © 2025 Code Riots. All rights reserved.
             </p>
           </div>
         </div>
