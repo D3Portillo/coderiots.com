@@ -57,8 +57,8 @@ export default function Home() {
       <section className="pt-16 pb-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center pt-40 pb-16">
-            <h1 className="text-5xl max-w-2xl mx-auto md:text-7xl font-black mb-6">
-              CHANGE YOUR LIFE TROUG CODE
+            <h1 className="text-5xl max-w-3xl mx-auto md:text-7xl font-black mb-6">
+              CHANGE YOUR LIFE THROUGH CODE
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
               Join high-stakes hackathons where you learn English and coding
