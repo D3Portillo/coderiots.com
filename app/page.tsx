@@ -454,7 +454,7 @@ export default function Home() {
 
               <span className="mx-1">|</span>
 
-              <a href="#" className="hover:text-white transition-colors ml-1">
+              <a href="/privacy" className="hover:text-white transition-colors ml-1">
                 Privacy Policy
               </a>
 
