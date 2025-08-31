@@ -6,17 +6,20 @@ import Navigation from "./Navigation"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen relative">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="pt-16 relative pb-20 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
+        <div className="absolute w-[80vw] h-[40vw] pointer-events-none top-0 -right-4 rounded-full blur-[40vw] bg-gradient-to-bl from-riot-red/10 to-riot-red/5" />
+
+        <div className="max-w-7xl relative z-[1] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center pt-40 pb-16">
             <h1 className="text-5xl uppercase max-w-3xl mx-auto md:text-7xl font-black mb-6">
               Bet on Brains.
               <br />
-              Watch the Clash
+              Watch the{" "}
+              <span className="italic underline underline-offset-8">Clash</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Live hackathons with commentary — degens back challengers, skills
@@ -26,19 +29,30 @@ export default function Home() {
               <Link
                 href="https://tally.so/r/3E2QlA"
                 target="_blank"
-                className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-lg text-lg font-bold transition-colors"
+                className="h-14 flex items-center justify-center bg-riot-red hover:bg-riot-red/80 text-white px-8 rounded-lg text-lg font-bold transition-colors"
               >
                 Join the Waitlist
               </Link>
               <Link
                 href="https://t.me/d3portillo"
                 target="_blank"
-                className="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-lg text-lg font-bold transition-all"
+                className="h-14 flex items-center justify-center border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 rounded-lg text-lg font-bold transition-all"
               >
                 Run a Hackathon
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="relative mt-8 px-3 overflow-x-hidden">
+          <div className="bg-gradient-to-b inset-0 absolute z-[1] from-gray-900/0 to-gray-900/100" />
+          <figure className="max-w-7xl hidden md:block mx-auto pointer-events-none">
+            <Image width={1671} height={436} src="/demoo.svg" alt="" />
+          </figure>
+
+          <figure className="max-w-7xl md:hidden mx-auto pointer-events-none">
+            <Image width={655} height={436} src="/demoo-mobile.svg" alt="" />
+          </figure>
         </div>
       </section>
 
