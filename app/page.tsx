@@ -166,121 +166,29 @@ export default function Home() {
 
             <div className="bg-gradient-to-br from-white/10 to-white/5 p-9 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-8 text-center">
-                Past Event Stats
+                Event Stats
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Active Participants</span>
-                  <span className="text-white font-medium text-xl">247</span>
+                  <span className="text-white font-medium text-xl">1,200</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Total Backing Pool</span>
                   <span className="text-riot-yellow underline font-bold text-xl">
-                    $12,450
+                    $10,000
                   </span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Avg. Live Viewers</span>
-                  <span className="text-white font-medium text-xl">1,832</span>
+                  <span className="text-white font-medium text-xl">530</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-black/50 rounded-lg">
                   <span className="text-white/80">Next Event</span>
                   <span className="text-white font-medium text-xl">
-                    20 hours
+                    Sept. 2025
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Success Stories */}
-      <section
-        id="success"
-        className="py-32 bg-gradient-to-b from-gray-900 via-gray-900 to-black"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-              Success Stories
-            </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              Real people. Real transformations. Real opportunities.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
-              <div className="mb-8">
-                <div
-                  style={{
-                    backgroundImage:
-                      "url(https://randomuser.me/api/portraits/women/1.jpg)",
-                  }}
-                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
-                />
-                <h3 className="text-2xl font-bold text-white">
-                  Maria Benavides
-                </h3>
-                <p className="text-white/70">
-                  Frontend Developer at StratoFinance
-                </p>
-              </div>
-              <p className="text-white mb-4 italic">
-                "I started with zero coding experience. After 6 months of
-                hackathons, I landed my dream job and improved my English from
-                zero to meeting my fiancé."
-              </p>
-              <div className="text-riot-yellow text-sm font-bold">
-                ⭐ $12k → $85k salary increase
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
-              <div className="mb-8">
-                <div
-                  style={{
-                    backgroundImage:
-                      "url(https://randomuser.me/api/portraits/men/20.jpg)",
-                  }}
-                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
-                />
-                <h3 className="text-2xl font-bold text-white">
-                  Antonio Rodriguez
-                </h3>
-                <p className="text-white/70">Full-Stack Developer, Remote</p>
-              </div>
-              <p className="text-white mb-4 italic">
-                "The competitive environment pushed me harder than any
-                traditional course. Now I work for a US company remotely from
-                Honduras."
-              </p>
-              <div className="text-riot-yellow text-sm font-bold">
-                ⭐ Life-changing opportunity
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-b from-black/20 to-white/0 p-8 rounded-2xl border border-white/10">
-              <div className="mb-8">
-                <div
-                  style={{
-                    backgroundImage:
-                      "url(https://randomuser.me/api/portraits/women/4.jpg)",
-                  }}
-                  className="size-16 border border-riot-yellow/30 bg-cover rounded-full flex items-center justify-center mb-4"
-                />
-                <h3 className="text-2xl font-bold text-white">Liza Santos</h3>
-                <p className="text-white/70">Startup Founder</p>
-              </div>
-
-              <p className="text-white mb-4 italic">
-                "I met my co-founder during a CodeRiots hackathon. The network
-                and skills I gained here helped us raise $2M for our AI{"<>"}
-                Crypto startup."
-              </p>
-              <div className="text-riot-yellow text-sm font-bold">
-                ⭐ $2M funding raised
               </div>
             </div>
           </div>
@@ -290,49 +198,11 @@ export default function Home() {
       {/* Community & Social Proof */}
       <section
         id="community"
-        className="pt-40 border-t border-white/10 pb-20 bg-black"
+        className="border-t border-white/25 pt-32 pb-20 bg-black"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
-              Join the{" "}
-              <span className="text-riot-red line-through">Revolution</span>
-            </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
-              Thousands of developers are already transforming their lives.
-              <br />
-              Your journey starts now.
-            </p>
-
-            <div className="grid md:grid-cols-4 gap-8 mb-32">
-              <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-riot-red mb-2">
-                  1.7K+
-                </div>
-                <div className="text-white/70">Active Participants</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-riot-green mb-2">
-                  $2.3M
-                </div>
-                <div className="text-white/70">Total Earnings Paid</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-riot-yellow mb-2">
-                  847
-                </div>
-                <div className="text-white/70">Jobs Enrolled</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-5xl font-black text-white mb-2">
-                  100%
-                </div>
-                <div className="text-white/70">Lifes Changed</div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-green p-1 rounded-2xl max-w-md mx-auto animate-gradient bg-[length:200%_100%]">
-              <style>{`
+        <div className="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-riot-red via-riot-yellow to-riot-green p-1 rounded-2xl max-w-md mx-auto animate-gradient bg-[length:200%_100%]">
+            <style>{`
                 @keyframes gradient {
                   0% { background-position: 0% 50%; }
                   50% { background-position: 100% 50%; }
@@ -342,21 +212,20 @@ export default function Home() {
                   animation: gradient 3s ease-in-out infinite;
                 }
               `}</style>
-              <div className="bg-black p-10 rounded-xl text-center">
-                <h3 className="text-3xl font-bold text-white mb-1">
-                  Ready to back a winner?
-                </h3>
-                <p className="text-white/80 text-lg mb-8">
-                  Hackathon bids are coming soon.
-                </p>
-                <Link
-                  href="https://tally.so/r/3E2QlA"
-                  target="_blank"
-                  className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors w-full"
-                >
-                  Request Demo
-                </Link>
-              </div>
+            <div className="bg-black p-10 rounded-xl text-center">
+              <h3 className="text-3xl font-bold text-white mb-1">
+                Ready to back a winner?
+              </h3>
+              <p className="text-white/80 text-lg mb-8">
+                Hackathon bids are coming soon.
+              </p>
+              <Link
+                href="https://tally.so/r/3E2QlA"
+                target="_blank"
+                className="bg-riot-red hover:bg-riot-red/80 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors w-full"
+              >
+                Request Demo
+              </Link>
             </div>
           </div>
         </div>
@@ -427,12 +296,6 @@ export default function Home() {
               <h3 className="text-white font-bold mb-4">Community</h3>
               <div className="space-y-2">
                 <a
-                  href="#success"
-                  className="block text-white/70 hover:text-white transition-colors"
-                >
-                  Success Stories
-                </a>
-                <a
                   href="https://t.me/+zsYD4JmLa8U5ZDRh"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
@@ -454,7 +317,10 @@ export default function Home() {
 
               <span className="mx-1">|</span>
 
-              <a href="/privacy" className="hover:text-white transition-colors ml-1">
+              <a
+                href="/privacy"
+                className="hover:text-white transition-colors ml-1"
+              >
                 Privacy Policy
               </a>
 

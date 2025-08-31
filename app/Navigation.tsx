@@ -22,18 +22,14 @@ export default function Navigation() {
             >
               How It Works
             </a>
+
             <a
               href="#competition"
               className="text-white/80 hover:text-white transition-colors"
             >
               Competition
             </a>
-            <a
-              href="#success"
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              Success Stories
-            </a>
+
             <a
               href="#community"
               className="text-white/80 hover:text-white transition-colors"
