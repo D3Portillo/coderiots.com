@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-gradient-to-b from-black/95 to-black/55 backdrop-blur border-b border-white/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex gap-8 items-center h-20">
+        <div className="flex items-center h-20">
           <div className="flex mr-3 shrink-0 invert items-center">
             <Link href="/#">
               <figure>
@@ -18,16 +18,17 @@ export default function Navigation() {
 
           <div className="flex-grow" />
 
-          <a className="font-semibold hidden sm:inline cursor-pointer hover:underline underline-offset-4">
+          <a className="font-semibold mr-8 hidden sm:inline cursor-pointer hover:underline underline-offset-4">
             Run a Hackathon
           </a>
 
           <Link
             href="https://tally.so/r/3E2QlA"
             target="_blank"
-            className="bg-riot-red hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+            className="bg-riot-red whitespace-nowrap hover:bg-riot-red/80 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
           >
-            Join the Waitlist
+            <span className="sm:hidden">Join Waitlist</span>
+            <span className="hidden sm:inline">Join the Waitlist</span>
           </Link>
         </div>
       </div>

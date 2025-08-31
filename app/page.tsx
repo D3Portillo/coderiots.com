@@ -22,7 +22,7 @@ export default function Home() {
               Live hackathons with commentary — degens back challengers, skills
               clash on-chain.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <div className="grid sm:inline-flex gap-4 mx-auto">
               <Link
                 href="https://tally.so/r/3E2QlA"
                 target="_blank"
