@@ -9,11 +9,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Code Riots - Changing lives through high-stakes hackathons",
+  title:
+    "Changing lives through high-stakes hackathons funded by crypto degens",
   description:
-    "Join Code Riots - the platform that changes lives through short, high-energy hackathons where participants learn English and coding, funded by crypto competition.",
-  keywords:
-    "hackathon, coding, English learning, crypto, blockchain, competition, programming",
+    "Code Riots turns hackathons into high-stakes coding battles with live commentary, on-chain bets, and degen hype. Back your favorite challengers, watch skills clash, and earn while builders fight for glory.",
+  keywords: "hackathon, coding, crypto, blockchain, competition, programming",
   twitter: {
     card: "summary_large_image",
     site: "@0xCodeRiots",
