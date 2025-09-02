@@ -13,9 +13,6 @@ const config: Config = {
         "riot-yellow": "#FFD700",
         "riot-green": "#00FF00",
       },
-      fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-      },
     },
   },
   plugins: [],

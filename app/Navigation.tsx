@@ -11,7 +11,12 @@ export default function Navigation() {
           <div className="flex mr-3 shrink-0 invert items-center">
             <Link href="/#">
               <figure>
-                <Image src={asset_logo_full} alt="" className="w-32" />
+                <Image
+                  placeholder="blur"
+                  src={asset_logo_full}
+                  alt=""
+                  className="w-32"
+                />
               </figure>
             </Link>
           </div>

@@ -1,18 +1,14 @@
+import { Fragment } from "react"
 import Image from "next/image"
-
 import Link from "next/link"
 
 import asset_logo from "@/assets/logo.png"
 import asset_demo from "@/assets/demo.png"
 import asset_demo_mobile from "@/assets/demo-mobile.png"
 
-import Navigation from "./Navigation"
-
 export default function Home() {
   return (
-    <main className="min-h-screen relative">
-      <Navigation />
-
+    <Fragment>
       {/* Hero Section */}
       <section className="pt-16 relative pb-20 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
         <div className="absolute w-[80vw] h-[40vw] pointer-events-none top-0 -right-4 rounded-full blur-[40vw] bg-gradient-to-bl from-riot-red/10 to-riot-red/5" />
@@ -156,25 +152,25 @@ export default function Home() {
               <br className="sm:hidden" />
               <span className="mx-1.5 hidden sm:inline">|</span>
 
-              <a
+              <Link
                 href="/privacy"
                 className="hover:text-white whitespace-nowrap transition-colors ml-1"
               >
                 Privacy Policy
-              </a>
+              </Link>
 
               <span className="mx-1.5">|</span>
 
-              <a
+              <Link
                 href="/terms"
                 className="hover:text-white whitespace-nowrap transition-colors ml-1"
               >
                 Terms of Service
-              </a>
+              </Link>
             </p>
           </div>
         </div>
       </footer>
-    </main>
+    </Fragment>
   )
 }

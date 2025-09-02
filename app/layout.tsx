@@ -1,5 +1,12 @@
-import type { Metadata } from "next"
 import "./globals.css"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import Navigation from "./Navigation"
+
+const inter = Inter({
+  subsets: [],
+  weight: ["400", "600", "700", "900"],
+})
 
 export const metadata: Metadata = {
   title: "Code Riots - Changing lives through high-stakes hackathons",
@@ -21,19 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-sans antialiased bg-black text-white">
+      <body
+        className={`${inter.className} min-h-screen antialiased bg-black text-white`}
+      >
+        <Navigation />
         {children}
       </body>
     </html>
