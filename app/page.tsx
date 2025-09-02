@@ -15,13 +15,13 @@ export default function Home() {
 
         <div className="max-w-7xl relative z-[1] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center pt-40 pb-16">
-            <h1 className="text-5xl uppercase max-w-3xl mx-auto md:text-7xl font-black mb-6">
+            <h1 className="text-4xl sm:text-5xl uppercase max-w-3xl mx-auto md:text-7xl font-black mb-6">
               Bet on Brains.
               <br />
               Watch the{" "}
               <span className="italic underline underline-offset-8">Clash</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-white/80 max-w-2xl mx-auto mb-8">
               Live hackathons with commentary — degens back challengers, skills
               clash on-chain.
             </p>
@@ -70,7 +70,7 @@ export default function Home() {
       <footer className="py-12 [&_a]:outline-none bg-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="col-span-2">
+            <div className="col-span-2 mb-8">
               <div className="flex items-center mb-4">
                 <figure className="mr-3 invert w-12">
                   <Image src={asset_logo} alt="" />
@@ -80,7 +80,7 @@ export default function Home() {
                 <strong className="font-semibold">Code Riots:</strong> Changing
                 lives through high-stakes hackathons funded by crypto degens.
               </p>
-              <div className="flex [&_a]:underline [&_a]:underline-offset-4 space-x-4">
+              <div className="flex [&_a]:underline [&_a]:underline-offset-4 space-x-5">
                 <a
                   href="https://twitter.com/0xCodeRiots"
                   target="_blank"
@@ -101,13 +101,13 @@ export default function Home() {
 
             <div>
               <h3 className="text-white font-bold mb-4">Platform</h3>
-              <div className="space-y-2">
-                <a
-                  href="#"
+              <div className="flex flex-col gap-2 items-start">
+                <Link
+                  href="/#"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   How it Works
-                </a>
+                </Link>
                 <a
                   href="https://tally.so/r/3E2QlA"
                   target="_blank"
@@ -119,7 +119,7 @@ export default function Home() {
                 <a
                   target="_blank"
                   href="https://tally.so/r/3E2QlA?persona=%F0%9F%8F%9F%EF%B8%8F%20Run%20a%20hackathon%20"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block whitespace-nowrap text-white/70 hover:text-white transition-colors"
                 >
                   Run a Hackathon
                 </a>
@@ -128,10 +128,10 @@ export default function Home() {
 
             <div>
               <h3 className="text-white font-bold mb-4">Community</h3>
-              <div className="space-y-2">
+              <div className="flex flex-col gap-2 items-start">
                 <a
                   href="https://t.me/+zsYD4JmLa8U5ZDRh"
-                  className="block text-white/70 hover:text-white transition-colors"
+                  className="block whitespace-nowrap text-white/70 hover:text-white transition-colors"
                 >
                   Developer Chat
                 </a>
