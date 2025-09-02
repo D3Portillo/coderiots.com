@@ -1,7 +1,11 @@
 import Image from "next/image"
 
 import Link from "next/link"
+
 import asset_logo from "@/assets/logo.png"
+import asset_demo from "@/assets/demo.png"
+import asset_demo_mobile from "@/assets/demo-mobile.png"
+
 import Navigation from "./Navigation"
 
 export default function Home() {
@@ -34,7 +38,7 @@ export default function Home() {
                 Join the Waitlist
               </Link>
               <Link
-                href="https://t.me/d3portillo"
+                href="https://tally.so/r/3E2QlA?persona=%F0%9F%8F%9F%EF%B8%8F%20Run%20a%20hackathon%20"
                 target="_blank"
                 className="h-14 flex items-center justify-center border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 rounded-lg text-lg font-bold transition-all"
               >
@@ -44,14 +48,24 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mt-8 px-3 overflow-x-hidden">
-          <div className="bg-gradient-to-b inset-0 absolute z-[1] from-gray-900/0 to-gray-900/100" />
+        <div
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
+          }}
+          className="mt-8 select-none px-3 overflow-x-hidden"
+        >
           <figure className="max-w-7xl hidden md:block mx-auto pointer-events-none">
-            <Image width={1671} height={436} src="/demoo.svg" alt="" />
+            <Image
+              className="w-full"
+              src={asset_demo}
+              placeholder="blur"
+              alt=""
+            />
           </figure>
 
           <figure className="max-w-7xl md:hidden mx-auto pointer-events-none">
-            <Image width={655} height={436} src="/demoo-mobile.svg" alt="" />
+            <Image className="w-full" src={asset_demo_mobile} alt="" />
           </figure>
         </div>
       </section>
@@ -107,7 +121,8 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="#"
+                  target="_blank"
+                  href="https://tally.so/r/3E2QlA?persona=%F0%9F%8F%9F%EF%B8%8F%20Run%20a%20hackathon%20"
                   className="block text-white/70 hover:text-white transition-colors"
                 >
                   Run a Hackathon

@@ -18,7 +18,11 @@ export default function Navigation() {
 
           <div className="flex-grow" />
 
-          <a className="font-semibold mr-8 hidden sm:inline cursor-pointer hover:underline underline-offset-4">
+          <a
+            href="https://tally.so/r/3E2QlA?persona=%F0%9F%8F%9F%EF%B8%8F%20Run%20a%20hackathon%20"
+            target="_blank"
+            className="font-semibold mr-8 hidden sm:inline cursor-pointer hover:underline underline-offset-4"
+          >
             Run a Hackathon
           </a>
 
